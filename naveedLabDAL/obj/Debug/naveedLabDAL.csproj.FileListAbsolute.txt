@@ -1,0 +1,118 @@
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+H:\naveedLab\naveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+G:\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll.config
+G:\naveedLab\naveedLabDAL\bin\naveedLabDAL.dll
+G:\naveedLab\naveedLabDAL\bin\naveedLabDAL.pdb
+G:\naveedLab\naveedLabDAL\bin\EntityFramework.dll
+G:\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+G:\naveedLab\naveedLabDAL\bin\EntityFramework.xml
+G:\naveedLab\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+G:\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.csprojResolveAssemblyReference.cache
+G:\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+G:\naveedLab\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+D:\Abdullah_Code\naveedLabDAL\bin\naveedLabDAL.dll.config
+D:\Abdullah_Code\naveedLabDAL\bin\naveedLabDAL.dll
+D:\Abdullah_Code\naveedLabDAL\bin\naveedLabDAL.pdb
+D:\Abdullah_Code\naveedLabDAL\bin\EntityFramework.dll
+D:\Abdullah_Code\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+D:\Abdullah_Code\naveedLabDAL\bin\EntityFramework.xml
+D:\Abdullah_Code\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+D:\Abdullah_Code\naveedLabDAL\obj\Debug\naveedLabDAL.csprojResolveAssemblyReference.cache
+D:\Abdullah_Code\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+D:\Abdullah_Code\naveedLabDAL\obj\Debug\naveedLabDAL.pdb
+F:\aman\DHQ\Code\naveedLabDAL\bin\naveedLabDAL.dll.config
+F:\aman\DHQ\Code\naveedLabDAL\bin\naveedLabDAL.dll
+F:\aman\DHQ\Code\naveedLabDAL\bin\naveedLabDAL.pdb
+F:\aman\DHQ\Code\naveedLabDAL\bin\EntityFramework.dll
+F:\aman\DHQ\Code\naveedLabDAL\bin\EntityFramework.SqlServer.dll
+F:\aman\DHQ\Code\naveedLabDAL\bin\EntityFramework.xml
+F:\aman\DHQ\Code\naveedLabDAL\bin\EntityFramework.SqlServer.xml
+F:\aman\DHQ\Code\naveedLabDAL\obj\Debug\naveedLabDAL.csprojAssemblyReference.cache
+F:\aman\DHQ\Code\naveedLabDAL\obj\Debug\naveedLabDAL.csproj.CoreCompileInputs.cache
+F:\aman\DHQ\Code\naveedLabDAL\obj\Debug\naveedLabDAL.csproj.CopyComplete
+F:\aman\DHQ\Code\naveedLabDAL\obj\Debug\naveedLabDAL.dll
+F:\aman\DHQ\Code\naveedLabDAL\obj\Debug\naveedLabDAL.pdb

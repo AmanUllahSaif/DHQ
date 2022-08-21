@@ -1,0 +1,1615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NaveedLabFinalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblAgeFactor">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AgeRange" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblBranch">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BranchName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="tblChapter">
+          <Key>
+            <PropertyRef Name="ChapterID" />
+          </Key>
+          <Property Name="ChapterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ChapterName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblDoctor">
+          <Key>
+            <PropertyRef Name="DoctorId" />
+          </Key>
+          <Property Name="DoctorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DoctorName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="DoctorType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="SharePercentage" Type="int" />
+        </EntityType>
+        <EntityType Name="tblEmployee">
+          <Key>
+            <PropertyRef Name="Email" />
+          </Key>
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="Designation" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="BranchFID" Type="int" />
+        </EntityType>
+        <EntityType Name="tblPatient">
+          <Key>
+            <PropertyRef Name="PatientID" />
+          </Key>
+          <Property Name="PatientID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PatientName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="DoctorID" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="EmailFID" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="TotalDiscountedCost" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="RemainingPaidRupees" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="monthlyNo" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblPatientTests">
+          <Key>
+            <PropertyRef Name="PatientId" />
+            <PropertyRef Name="TestId" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PatientId" Type="int" Nullable="false" />
+          <Property Name="TestId" Type="int" Nullable="false" />
+          <Property Name="EmployeeID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Flag" Type="nvarchar" MaxLength="50" />
+          <Property Name="SpecialDiscount" Type="int" />
+        </EntityType>
+        <EntityType Name="tblResult">
+          <Key>
+            <PropertyRef Name="TestParameterId" />
+            <PropertyRef Name="PatientTestId" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TestParameterId" Type="int" Nullable="false" />
+          <Property Name="ValueResult" Type="nvarchar" MaxLength="50" />
+          <Property Name="PatientTestId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblTest">
+          <Key>
+            <PropertyRef Name="TestName" />
+            <PropertyRef Name="ChapterFID" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TestName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ChapterFID" Type="int" Nullable="false" />
+          <Property Name="Charges" Type="int" />
+        </EntityType>
+        <EntityType Name="tblTestParameters">
+          <Key>
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="TestId" />
+            <PropertyRef Name="AgeRangeFID" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TestId" Type="int" Nullable="false" />
+          <Property Name="StandardValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="AgeRangeFID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tblEmployee_tblBranch">
+          <End Role="tblBranch" Type="Self.tblBranch" Multiplicity="0..1" />
+          <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBranch">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblEmployee">
+              <PropertyRef Name="BranchFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPatient_tblDoctor">
+          <End Role="tblDoctor" Type="Self.tblDoctor" Multiplicity="0..1" />
+          <End Role="tblPatient" Type="Self.tblPatient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDoctor">
+              <PropertyRef Name="DoctorId" />
+            </Principal>
+            <Dependent Role="tblPatient">
+              <PropertyRef Name="DoctorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPatient_tblPatient">
+          <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="0..1" />
+          <End Role="tblPatient" Type="Self.tblPatient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="Email" />
+            </Principal>
+            <Dependent Role="tblPatient">
+              <PropertyRef Name="EmailFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPatientTests_tblPatient">
+          <End Role="tblPatient" Type="Self.tblPatient" Multiplicity="1" />
+          <End Role="tblPatientTests" Type="Self.tblPatientTests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPatient">
+              <PropertyRef Name="PatientID" />
+            </Principal>
+            <Dependent Role="tblPatientTests">
+              <PropertyRef Name="PatientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPatientTests_tblPatientTests">
+          <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+          <End Role="tblPatientTests" Type="Self.tblPatientTests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="Email" />
+            </Principal>
+            <Dependent Role="tblPatientTests">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTest_tblChapter">
+          <End Role="tblChapter" Type="Self.tblChapter" Multiplicity="1" />
+          <End Role="tblTest" Type="Self.tblTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblChapter">
+              <PropertyRef Name="ChapterID" />
+            </Principal>
+            <Dependent Role="tblTest">
+              <PropertyRef Name="ChapterFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestParameters_tblAgeFactor">
+          <End Role="tblAgeFactor" Type="Self.tblAgeFactor" Multiplicity="1" />
+          <End Role="tblTestParameters" Type="Self.tblTestParameters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAgeFactor">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblTestParameters">
+              <PropertyRef Name="AgeRangeFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="addParameterInSpecificAgeFactor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="Value" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="changePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="newPassword" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="deleteDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DoctorId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="deleteEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="deleteParameterFromSpecificAgeFactor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DHQ_AddPatient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+          <Parameter Name="Doctorid" Type="int" Mode="In" />
+          <Parameter Name="datePatient" Type="date" Mode="In" />
+          <Parameter Name="emailFid" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="monthlyNo" Type="nvarchar" Mode="In" />
+          <Parameter Name="returnId" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="getAllBranches" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getDoctorID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="int" Mode="In" />
+          <Parameter Name="outPut" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="getDoctors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="insertTestParameterResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="resultID" Type="int" Mode="In" />
+          <Parameter Name="patientID" Type="int" Mode="In" />
+          <Parameter Name="parameterValue" Type="nvarchar" Mode="In" />
+          <Parameter Name="testID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectAgeFactor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="selectAlreadyPrintedTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectChapter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="selectPatient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="pId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectPatientByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectPatientNameAndTests" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectPatientTests" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectPatientTestsForAddingResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectPatientTestsForAddingResultForUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectPreviousBill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectResultedTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectResultForPrint" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectTestInChapter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="chapterID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectTestParametersForResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="selectTestParametersInAgeRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AgeFactorID" Type="int" Mode="In" />
+          <Parameter Name="testID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SelectTestPrice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="setDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="drName" Type="nvarchar" Mode="In" />
+          <Parameter Name="drGender" Type="nvarchar" Mode="In" />
+          <Parameter Name="drStatus" Type="nvarchar" Mode="In" />
+          <Parameter Name="drAddress" Type="nvarchar" Mode="In" />
+          <Parameter Name="drPhone" Type="nvarchar" Mode="In" />
+          <Parameter Name="sharePercentage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="setEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Name" Type="nvarchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+          <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="Designation" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="BranchFID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="setTestToPendingForUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="setTestToPrinted" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="signInUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_CalculateBill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_CalculateDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="docID" Type="int" Mode="In" />
+          <Parameter Name="startDate" Type="date" Mode="In" />
+          <Parameter Name="endDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_CalculatePatientBill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_CalculatePatientReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_CalculateSales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="startDate" Type="date" Mode="In" />
+          <Parameter Name="endDate" Type="date" Mode="In" />
+          <Parameter Name="calType" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ChkBil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientId" Type="int" Mode="In" />
+          <Parameter Name="remaingAmount" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="sp_CountDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_GetDailyPatientID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="dailyDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_Load_Flag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="sFlag" Type="nvarchar" Mode="In" />
+          <Parameter Name="npId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_SelectTestMonthlyCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="testName" Type="nvarchar" Mode="In" />
+          <Parameter Name="startdate" Type="date" Mode="In" />
+          <Parameter Name="enddate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_SelectTestYearlyCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="year" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="spAcceptRemainingPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="int" Mode="In" />
+          <Parameter Name="balance" Type="int" Mode="In" />
+          <Parameter Name="output" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="SpAddParameters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="P1" Type="xml" Mode="In" />
+          <Parameter Name="P2" Type="xml" Mode="In" />
+        </Function>
+        <Function Name="spChkPatientTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="numeric" Mode="In" />
+          <Parameter Name="patinentCheck" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="spInsertParametersForRegisteredTests" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientTestId" Type="int" Mode="In" />
+          <Parameter Name="testParameterId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="spRegisterTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="int" Mode="In" />
+          <Parameter Name="testID" Type="int" Mode="In" />
+          <Parameter Name="employeeEmail" Type="nvarchar" Mode="In" />
+          <Parameter Name="specialDiscount" Type="int" Mode="In" />
+          <Parameter Name="ageFactor" Type="int" Mode="In" />
+          <Parameter Name="chkCount" Type="int" Mode="In" />
+        </Function>
+        <Function Name="spUpdatePatientDiscountedCost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="patientID" Type="numeric" Mode="In" />
+          <Parameter Name="discountedCostPaid" Type="numeric" Mode="In" />
+          <Parameter Name="remainingpaidAmount" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="updateDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="drId" Type="int" Mode="In" />
+          <Parameter Name="drName" Type="nvarchar" Mode="In" />
+          <Parameter Name="drType" Type="nvarchar" Mode="In" />
+          <Parameter Name="Address" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+          <Parameter Name="SharePercentage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="updateEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="empName" Type="nvarchar" Mode="In" />
+          <Parameter Name="address" Type="nvarchar" Mode="In" />
+          <Parameter Name="Designation" Type="nvarchar" Mode="In" />
+          <Parameter Name="BrID" Type="int" Mode="In" />
+          <Parameter Name="PhoneNo" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="updatePatient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Name" Type="nvarchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+          <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="UpdateTestCharges" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="P1" Type="xml" Mode="In" />
+        </Function>
+        <EntityContainer Name="NaveedLabFinalDBModelStoreContainer">
+          <EntitySet Name="tblAgeFactor" EntityType="Self.tblAgeFactor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblBranch" EntityType="Self.tblBranch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblChapter" EntityType="Self.tblChapter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblDoctor" EntityType="Self.tblDoctor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblEmployee" EntityType="Self.tblEmployee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblPatient" EntityType="Self.tblPatient" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblPatientTests" EntityType="Self.tblPatientTests" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblResult" EntityType="Self.tblResult" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTest" EntityType="Self.tblTest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTestParameters" EntityType="Self.tblTestParameters" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tblEmployee_tblBranch" Association="Self.FK_tblEmployee_tblBranch">
+            <End Role="tblBranch" EntitySet="tblBranch" />
+            <End Role="tblEmployee" EntitySet="tblEmployee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPatient_tblDoctor" Association="Self.FK_tblPatient_tblDoctor">
+            <End Role="tblDoctor" EntitySet="tblDoctor" />
+            <End Role="tblPatient" EntitySet="tblPatient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPatient_tblPatient" Association="Self.FK_tblPatient_tblPatient">
+            <End Role="tblEmployee" EntitySet="tblEmployee" />
+            <End Role="tblPatient" EntitySet="tblPatient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPatientTests_tblPatient" Association="Self.FK_tblPatientTests_tblPatient">
+            <End Role="tblPatient" EntitySet="tblPatient" />
+            <End Role="tblPatientTests" EntitySet="tblPatientTests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPatientTests_tblPatientTests" Association="Self.FK_tblPatientTests_tblPatientTests">
+            <End Role="tblEmployee" EntitySet="tblEmployee" />
+            <End Role="tblPatientTests" EntitySet="tblPatientTests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTest_tblChapter" Association="Self.FK_tblTest_tblChapter">
+            <End Role="tblChapter" EntitySet="tblChapter" />
+            <End Role="tblTest" EntitySet="tblTest" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestParameters_tblAgeFactor" Association="Self.FK_tblTestParameters_tblAgeFactor">
+            <End Role="tblAgeFactor" EntitySet="tblAgeFactor" />
+            <End Role="tblTestParameters" EntitySet="tblTestParameters" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NaveedLabFinalDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="NaveedLabFinalDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblAgeFactors" EntityType="NaveedLabFinalDBModel.tblAgeFactor" />
+          <EntitySet Name="tblBranches" EntityType="NaveedLabFinalDBModel.tblBranch" />
+          <EntitySet Name="tblChapters" EntityType="NaveedLabFinalDBModel.tblChapter" />
+          <EntitySet Name="tblDoctors" EntityType="NaveedLabFinalDBModel.tblDoctor" />
+          <EntitySet Name="tblEmployees" EntityType="NaveedLabFinalDBModel.tblEmployee" />
+          <EntitySet Name="tblPatientTests" EntityType="NaveedLabFinalDBModel.tblPatientTest" />
+          <EntitySet Name="tblResults" EntityType="NaveedLabFinalDBModel.tblResult" />
+          <EntitySet Name="tblTests" EntityType="NaveedLabFinalDBModel.tblTest" />
+          <EntitySet Name="tblTestParameters" EntityType="NaveedLabFinalDBModel.tblTestParameter" />
+          <AssociationSet Name="FK_tblTestParameters_tblAgeFactor" Association="NaveedLabFinalDBModel.FK_tblTestParameters_tblAgeFactor">
+            <End Role="tblAgeFactor" EntitySet="tblAgeFactors" />
+            <End Role="tblTestParameter" EntitySet="tblTestParameters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblEmployee_tblBranch" Association="NaveedLabFinalDBModel.FK_tblEmployee_tblBranch">
+            <End Role="tblBranch" EntitySet="tblBranches" />
+            <End Role="tblEmployee" EntitySet="tblEmployees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTest_tblChapter" Association="NaveedLabFinalDBModel.FK_tblTest_tblChapter">
+            <End Role="tblChapter" EntitySet="tblChapters" />
+            <End Role="tblTest" EntitySet="tblTests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPatientTests_tblPatientTests" Association="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatientTests">
+            <End Role="tblEmployee" EntitySet="tblEmployees" />
+            <End Role="tblPatientTest" EntitySet="tblPatientTests" />
+          </AssociationSet>
+          <FunctionImport Name="addParameterInSpecificAgeFactor">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Value" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="changePassword">
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="newPassword" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="deleteDoctor">
+          <Parameter Name="DoctorId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="deleteEmployees">
+          <Parameter Name="email" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="deleteParameterFromSpecificAgeFactor">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getAllBranches" ReturnType="Collection(NaveedLabFinalDBModel.getAllBranches_Result)" />
+          <FunctionImport Name="getDoctors" ReturnType="Collection(NaveedLabFinalDBModel.getDoctors_Result)" />
+          <FunctionImport Name="getEmployees" ReturnType="Collection(NaveedLabFinalDBModel.getEmployees_Result)" />
+          <FunctionImport Name="insertTestParameterResult">
+            <Parameter Name="resultID" Mode="In" Type="Int32" />
+            <Parameter Name="patientID" Mode="In" Type="Int32" />
+            <Parameter Name="parameterValue" Mode="In" Type="String" />
+            <Parameter Name="testID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectAgeFactor" ReturnType="Collection(NaveedLabFinalDBModel.selectAgeFactor_Result)" />
+          <FunctionImport Name="selectChapter" ReturnType="Collection(NaveedLabFinalDBModel.selectChapter_Result)" />
+          <FunctionImport Name="selectPatient" ReturnType="Collection(NaveedLabFinalDBModel.selectPatient_Result)">
+          <Parameter Name="pId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectPatientByID" ReturnType="Collection(NaveedLabFinalDBModel.selectPatientByID_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectPatientNameAndTests" ReturnType="Collection(NaveedLabFinalDBModel.selectPatientNameAndTests_Result)">
+          <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectResultedTest" ReturnType="Collection(NaveedLabFinalDBModel.selectResultedTest_Result)">
+          <Parameter Name="patientID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectResultForPrint" ReturnType="Collection(NaveedLabFinalDBModel.selectResultForPrint_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectTestInChapter" ReturnType="Collection(NaveedLabFinalDBModel.selectTestInChapter_Result)">
+          <Parameter Name="chapterID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectTestParametersForResult" ReturnType="Collection(NaveedLabFinalDBModel.selectTestParametersForResult_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectTestParametersInAgeRange" ReturnType="Collection(NaveedLabFinalDBModel.selectTestParametersInAgeRange_Result)">
+            <Parameter Name="AgeFactorID" Mode="In" Type="Int32" />
+            <Parameter Name="testID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SelectTestPrice" ReturnType="Collection(NaveedLabFinalDBModel.SelectTestPrice_Result)" />
+          <FunctionImport Name="setDoctor">
+            <Parameter Name="drName" Mode="In" Type="String" />
+            <Parameter Name="drGender" Mode="In" Type="String" />
+            <Parameter Name="drStatus" Mode="In" Type="String" />
+            <Parameter Name="drAddress" Mode="In" Type="String" />
+            <Parameter Name="drPhone" Mode="In" Type="String" />
+            <Parameter Name="sharePercentage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="setEmployees">
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="Gender" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Designation" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="BranchFID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="setTestToPendingForUpdate">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="setTestToPrinted">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="signInUser" ReturnType="Collection(NaveedLabFinalDBModel.signInUser_Result)">
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SpAddParameters">
+            <Parameter Name="P1" Mode="In" Type="String" />
+            <Parameter Name="P2" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertParametersForRegisteredTests">
+            <Parameter Name="patientTestId" Mode="In" Type="Int32" />
+            <Parameter Name="testParameterId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spIsPrinted">
+            <Parameter Name="patientID" Mode="In" Type="Int32" />
+            <Parameter Name="output" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="updateDoctor">
+            <Parameter Name="drId" Mode="In" Type="Int32" />
+            <Parameter Name="drName" Mode="In" Type="String" />
+            <Parameter Name="drType" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="SharePercentage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="updateEmployees">
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="empName" Mode="In" Type="String" />
+            <Parameter Name="address" Mode="In" Type="String" />
+            <Parameter Name="Designation" Mode="In" Type="String" />
+            <Parameter Name="BrID" Mode="In" Type="Int32" />
+            <Parameter Name="PhoneNo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="updatePatient">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Gender" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="UpdateTestCharges">
+          <Parameter Name="P1" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="spSelectTestName" ReturnType="Collection(NaveedLabFinalDBModel.spSelectTestName_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectAlreadyPrintedTest" ReturnType="Collection(NaveedLabFinalDBModel.selectAlreadyPrintedTest_Result)">
+          <Parameter Name="patientID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spSelectTestsRegisteredByPatient" ReturnType="Collection(NaveedLabFinalDBModel.spSelectTestsRegisteredByPatient_Result)">
+          <Parameter Name="patientID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_CalculateDoctor" ReturnType="Collection(NaveedLabFinalDBModel.sp_CalculateDoctor_Result)">
+            <Parameter Name="docID" Mode="In" Type="Int32" />
+            <Parameter Name="startDate" Mode="In" Type="DateTime" />
+            <Parameter Name="endDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="sp_CalculateSales" ReturnType="Collection(NaveedLabFinalDBModel.sp_CalculateSales_Result)">
+            <Parameter Name="startDate" Mode="In" Type="DateTime" />
+            <Parameter Name="endDate" Mode="In" Type="DateTime" />
+            <Parameter Name="calType" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="tblPatients" EntityType="NaveedLabFinalDBModel.tblPatient" />
+          <AssociationSet Name="FK_tblPatient_tblDoctor" Association="NaveedLabFinalDBModel.FK_tblPatient_tblDoctor">
+            <End Role="tblDoctor" EntitySet="tblDoctors" />
+            <End Role="tblPatient" EntitySet="tblPatients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPatient_tblPatient" Association="NaveedLabFinalDBModel.FK_tblPatient_tblPatient">
+            <End Role="tblEmployee" EntitySet="tblEmployees" />
+            <End Role="tblPatient" EntitySet="tblPatients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPatientTests_tblPatient" Association="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatient">
+            <End Role="tblPatient" EntitySet="tblPatients" />
+            <End Role="tblPatientTest" EntitySet="tblPatientTests" />
+          </AssociationSet>
+          <FunctionImport Name="spUpdatePatientDiscountedCost">
+            <Parameter Name="patientID" Mode="In" Type="Decimal" />
+            <Parameter Name="discountedCostPaid" Mode="In" Type="Decimal" />
+            <Parameter Name="remainingpaidAmount" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="spChkPatientTest">
+            <Parameter Name="patientID" Mode="In" Type="Decimal" />
+            <Parameter Name="patinentCheck" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_ChkBil">
+            <Parameter Name="patientId" Mode="In" Type="Int32" />
+            <Parameter Name="remaingAmount" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spAcceptRemainingPayment">
+            <Parameter Name="patientID" Mode="In" Type="Int32" />
+            <Parameter Name="balance" Mode="In" Type="Int32" />
+            <Parameter Name="output" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_GetDailyPatientID" ReturnType="Collection(NaveedLabFinalDBModel.sp_GetDailyPatientID_Result)">
+          <Parameter Name="dailyDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="DHQ_AddPatient">
+            <Parameter Name="patientName" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Gender" Mode="In" Type="String" />
+            <Parameter Name="Doctorid" Mode="In" Type="Int32" />
+            <Parameter Name="datePatient" Mode="In" Type="DateTime" />
+            <Parameter Name="emailFid" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+            <Parameter Name="monthlyNo" Mode="In" Type="String" />
+            <Parameter Name="returnId" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_CalculatePatientBill" ReturnType="Collection(NaveedLabFinalDBModel.sp_CalculatePatientBill_Result)">
+          <Parameter Name="patientId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_CalculateBill" ReturnType="Collection(NaveedLabFinalDBModel.sp_CalculateBill_Result)">
+          <Parameter Name="patientId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getDoctorID">
+            <Parameter Name="patientID" Mode="In" Type="Int32" />
+            <Parameter Name="outPut" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_CalculatePatientReport" ReturnType="Collection(NaveedLabFinalDBModel.sp_CalculatePatientReport_Result)">
+          <Parameter Name="patientId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_CountDoctor" ReturnType="Collection(NaveedLabFinalDBModel.sp_CountDoctor_Result)">
+          <Parameter Name="year" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_Load_Flag" ReturnType="Collection(NaveedLabFinalDBModel.sp_Load_Flag_Result)">
+            <Parameter Name="sFlag" Mode="In" Type="String" />
+            <Parameter Name="npId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_SelectTestMonthlyCount" ReturnType="Collection(NaveedLabFinalDBModel.sp_SelectTestMonthlyCount_Result)">
+            <Parameter Name="testName" Mode="In" Type="String" />
+            <Parameter Name="startdate" Mode="In" Type="DateTime" />
+            <Parameter Name="enddate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="sp_SelectTestYearlyCount" ReturnType="Collection(NaveedLabFinalDBModel.sp_SelectTestYearlyCount_Result)">
+          <Parameter Name="year" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="selectPatientTests" ReturnType="Collection(NaveedLabFinalDBModel.selectPatientTests_Result)">
+            <Parameter Name="patientID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectPatientTestsForAddingResult" ReturnType="Collection(NaveedLabFinalDBModel.selectPatientTestsForAddingResult_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectPatientTestsForAddingResultForUpdate" ReturnType="Collection(NaveedLabFinalDBModel.selectPatientTestsForAddingResultForUpdate_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="selectPreviousBill" ReturnType="Collection(NaveedLabFinalDBModel.selectPreviousBill_Result)">
+            <Parameter Name="patientID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spRegisterTest">
+            <Parameter Name="patientID" Mode="In" Type="Int32" />
+            <Parameter Name="testID" Mode="In" Type="Int32" />
+            <Parameter Name="employeeEmail" Mode="In" Type="String" />
+            <Parameter Name="specialDiscount" Mode="In" Type="Int32" />
+            <Parameter Name="ageFactor" Mode="In" Type="Int32" />
+            <Parameter Name="chkCount" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="tblAgeFactor">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AgeRange" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblTestParameters" Relationship="NaveedLabFinalDBModel.FK_tblTestParameters_tblAgeFactor" FromRole="tblAgeFactor" ToRole="tblTestParameter" />
+        </EntityType>
+        <EntityType Name="tblBranch">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BranchName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblEmployees" Relationship="NaveedLabFinalDBModel.FK_tblEmployee_tblBranch" FromRole="tblBranch" ToRole="tblEmployee" />
+        </EntityType>
+        <EntityType Name="tblChapter">
+          <Key>
+            <PropertyRef Name="ChapterID" />
+          </Key>
+          <Property Name="ChapterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ChapterName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblTests" Relationship="NaveedLabFinalDBModel.FK_tblTest_tblChapter" FromRole="tblChapter" ToRole="tblTest" />
+        </EntityType>
+        <EntityType Name="tblDoctor">
+          <Key>
+            <PropertyRef Name="DoctorId" />
+          </Key>
+          <Property Name="DoctorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DoctorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DoctorType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SharePercentage" Type="Int32" />
+          <NavigationProperty Name="tblPatients" Relationship="NaveedLabFinalDBModel.FK_tblPatient_tblDoctor" FromRole="tblDoctor" ToRole="tblPatient" />
+        </EntityType>
+        <EntityType Name="tblEmployee">
+          <Key>
+            <PropertyRef Name="Email" />
+          </Key>
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BranchFID" Type="Int32" />
+          <NavigationProperty Name="tblBranch" Relationship="NaveedLabFinalDBModel.FK_tblEmployee_tblBranch" FromRole="tblEmployee" ToRole="tblBranch" />
+          <NavigationProperty Name="tblPatientTests" Relationship="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatientTests" FromRole="tblEmployee" ToRole="tblPatientTest" />
+          <NavigationProperty Name="tblPatients" Relationship="NaveedLabFinalDBModel.FK_tblPatient_tblPatient" FromRole="tblEmployee" ToRole="tblPatient" />
+        </EntityType>
+        <EntityType Name="tblPatientTest">
+          <Key>
+            <PropertyRef Name="PatientId" />
+            <PropertyRef Name="TestId" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PatientId" Type="Int32" Nullable="false" />
+          <Property Name="TestId" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Flag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialDiscount" Type="Int32" />
+          <NavigationProperty Name="tblEmployee" Relationship="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatientTests" FromRole="tblPatientTest" ToRole="tblEmployee" />
+          <NavigationProperty Name="tblPatient" Relationship="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatient" FromRole="tblPatientTest" ToRole="tblPatient" />
+        </EntityType>
+        <EntityType Name="tblResult">
+          <Key>
+            <PropertyRef Name="TestParameterId" />
+            <PropertyRef Name="PatientTestId" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TestParameterId" Type="Int32" Nullable="false" />
+          <Property Name="ValueResult" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PatientTestId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblTest">
+          <Key>
+            <PropertyRef Name="TestName" />
+            <PropertyRef Name="ChapterFID" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TestName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ChapterFID" Type="Int32" Nullable="false" />
+          <Property Name="Charges" Type="Int32" />
+          <NavigationProperty Name="tblChapter" Relationship="NaveedLabFinalDBModel.FK_tblTest_tblChapter" FromRole="tblTest" ToRole="tblChapter" />
+        </EntityType>
+        <EntityType Name="tblTestParameter">
+          <Key>
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="TestId" />
+            <PropertyRef Name="AgeRangeFID" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TestId" Type="Int32" Nullable="false" />
+          <Property Name="StandardValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AgeRangeFID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblAgeFactor" Relationship="NaveedLabFinalDBModel.FK_tblTestParameters_tblAgeFactor" FromRole="tblTestParameter" ToRole="tblAgeFactor" />
+        </EntityType>
+        <Association Name="FK_tblTestParameters_tblAgeFactor">
+          <End Type="NaveedLabFinalDBModel.tblAgeFactor" Role="tblAgeFactor" Multiplicity="1" />
+          <End Type="NaveedLabFinalDBModel.tblTestParameter" Role="tblTestParameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAgeFactor">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblTestParameter">
+              <PropertyRef Name="AgeRangeFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblEmployee_tblBranch">
+          <End Type="NaveedLabFinalDBModel.tblBranch" Role="tblBranch" Multiplicity="0..1" />
+          <End Type="NaveedLabFinalDBModel.tblEmployee" Role="tblEmployee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBranch">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblEmployee">
+              <PropertyRef Name="BranchFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTest_tblChapter">
+          <End Type="NaveedLabFinalDBModel.tblChapter" Role="tblChapter" Multiplicity="1" />
+          <End Type="NaveedLabFinalDBModel.tblTest" Role="tblTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblChapter">
+              <PropertyRef Name="ChapterID" />
+            </Principal>
+            <Dependent Role="tblTest">
+              <PropertyRef Name="ChapterFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPatientTests_tblPatientTests">
+          <End Type="NaveedLabFinalDBModel.tblEmployee" Role="tblEmployee" Multiplicity="1" />
+          <End Type="NaveedLabFinalDBModel.tblPatientTest" Role="tblPatientTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="Email" />
+            </Principal>
+            <Dependent Role="tblPatientTest">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="getAllBranches_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="BranchName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="getDoctors_Result">
+          <Property Type="Int32" Name="DoctorId" Nullable="false" />
+          <Property Type="String" Name="DoctorName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="DoctorType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="SharePercentage" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="getEmployees_Result">
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="BranchFID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="selectAgeFactor_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="AgeRange" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectChapter_Result">
+          <Property Type="Int32" Name="ChapterID" Nullable="false" />
+          <Property Type="String" Name="ChapterName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectPatient_Result">
+          <Property Type="Int32" Name="PatientID" Nullable="false" />
+          <Property Type="String" Name="PatientName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="DoctorID" Nullable="true" />
+          <Property Type="DateTime" Name="Date" Nullable="true" />
+          <Property Type="String" Name="EmailFID" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="TotalDiscountedCost" Nullable="true" Precision="18" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="selectPatientByID_Result">
+          <Property Type="Int32" Name="PatientID" Nullable="false" />
+          <Property Type="String" Name="PatientName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="DoctorID" Nullable="true" />
+          <Property Type="DateTime" Name="Date" Nullable="true" />
+          <Property Type="String" Name="EmailFID" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="TotalDiscountedCost" Nullable="true" Precision="18" Scale="0" />
+        </ComplexType>
+        <ComplexType Name="selectPatientNameAndTests_Result">
+          <Property Type="String" Name="PatientName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TestId" Nullable="false" />
+          <Property Type="Int32" Name="Charges" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="selectResultedTest_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TestId" Nullable="false" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectResultForPrint_Result">
+          <Property Type="Int32" Name="PatientTestId" Nullable="false" />
+          <Property Type="String" Name="StandardValue" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ValueResult" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectTestInChapter_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="ChapterFID" Nullable="false" />
+          <Property Type="Int32" Name="Charges" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="selectTestParametersForResult_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="StandardValue" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="TestId" Nullable="true" />
+          <Property Type="String" Name="ValueResult" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectTestParametersInAgeRange_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TestId" Nullable="false" />
+          <Property Type="String" Name="StandardValue" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="AgeRangeFID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SelectTestPrice_Result">
+          <Property Type="Int32" Name="ChapterID" Nullable="false" />
+          <Property Type="String" Name="ChapterName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ISUPDATE" Nullable="false" MaxLength="1" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="Charges" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="signInUser_Result">
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="BranchFID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelectTestName_Result">
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectAlreadyPrintedTest_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TestId" Nullable="false" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="spSelectTestsRegisteredByPatient_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TestName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_CalculateDoctor_Result">
+          <Property Type="Decimal" Name="totalCost" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Int32" Name="SharePercentage" Nullable="false" />
+          <Property Type="Int32" Name="totalPatients" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_CalculateSales_Result">
+          <Property Type="Int32" Name="totalPatient" Nullable="true" />
+          <Property Type="Decimal" Name="totalCost" Nullable="true" Precision="38" Scale="0" />
+        </ComplexType>
+        <EntityType Name="tblPatient">
+          <Key>
+            <PropertyRef Name="PatientID" />
+          </Key>
+          <Property Name="PatientID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PatientName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DoctorID" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="EmailFID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TotalDiscountedCost" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="RemainingPaidRupees" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="tblDoctor" Relationship="NaveedLabFinalDBModel.FK_tblPatient_tblDoctor" FromRole="tblPatient" ToRole="tblDoctor" />
+          <NavigationProperty Name="tblEmployee" Relationship="NaveedLabFinalDBModel.FK_tblPatient_tblPatient" FromRole="tblPatient" ToRole="tblEmployee" />
+          <NavigationProperty Name="tblPatientTests" Relationship="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatient" FromRole="tblPatient" ToRole="tblPatientTest" />
+          <Property Name="monthlyNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_tblPatient_tblDoctor">
+          <End Type="NaveedLabFinalDBModel.tblDoctor" Role="tblDoctor" Multiplicity="0..1" />
+          <End Type="NaveedLabFinalDBModel.tblPatient" Role="tblPatient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDoctor">
+              <PropertyRef Name="DoctorId" />
+            </Principal>
+            <Dependent Role="tblPatient">
+              <PropertyRef Name="DoctorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPatient_tblPatient">
+          <End Type="NaveedLabFinalDBModel.tblEmployee" Role="tblEmployee" Multiplicity="0..1" />
+          <End Type="NaveedLabFinalDBModel.tblPatient" Role="tblPatient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmployee">
+              <PropertyRef Name="Email" />
+            </Principal>
+            <Dependent Role="tblPatient">
+              <PropertyRef Name="EmailFID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPatientTests_tblPatient">
+          <End Type="NaveedLabFinalDBModel.tblPatient" Role="tblPatient" Multiplicity="1" />
+          <End Type="NaveedLabFinalDBModel.tblPatientTest" Role="tblPatientTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPatient">
+              <PropertyRef Name="PatientID" />
+            </Principal>
+            <Dependent Role="tblPatientTest">
+              <PropertyRef Name="PatientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_GetDailyPatientID_Result">
+          <Property Type="Int32" Name="PatientID" Nullable="false" />
+          <Property Type="DateTime" Name="Date" Nullable="true" />
+          <Property Type="String" Name="monthlyNo" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_CalculatePatientBill_Result">
+          <Property Type="String" Name="PatientName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="String" Name="DoctorName" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="Date" Nullable="true" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="PatientID" Nullable="false" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="monthlyNo" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_CalculateBill_Result">
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PatientName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="String" Name="DoctorName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="Date" Nullable="true" />
+          <Property Type="Int32" Name="Charges" Nullable="true" />
+          <Property Type="Int32" Name="SpecialDiscount" Nullable="true" />
+          <Property Type="Decimal" Name="TotalCost" Nullable="true" Precision="18" Scale="0" />
+          <Property Type="Int32" Name="PatientID" Nullable="false" />
+          <Property Type="Decimal" Name="AmountPaid" Nullable="true" Precision="19" Scale="0" />
+          <Property Type="Decimal" Name="RemaingAmount" Nullable="true" Precision="18" Scale="0" />
+          <Property Type="String" Name="dailyId" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="mr_" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_CalculatePatientReport_Result">
+          <Property Type="String" Name="StandardValue" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ValueResult" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_CountDoctor_Result">
+          <Property Type="Int32" Name="TestCount" Nullable="true" />
+          <Property Type="String" Name="TestName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_Load_Flag_Result">
+          <Property Type="Int32" Name="PatientID" Nullable="false" />
+          <Property Type="String" Name="PatientName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Age" Nullable="true" />
+          <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="Date" Nullable="true" />
+          <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="sp_SelectTestMonthlyCount_Result">
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TestCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_SelectTestYearlyCount_Result">
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TestCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="selectPatientTests_Result">
+          <Property Type="Int32" Name="SelectedTestID" Nullable="false" />
+          <Property Type="Int32" Name="ChapterFID" Nullable="false" />
+          <Property Type="Int32" Name="Charges" Nullable="true" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="SpecialDiscount" Nullable="true" />
+          <Property Type="Int32" Name="PercentageDiscount" Nullable="true" />
+          <Property Type="Int32" Name="RemainingTestPrice" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="selectPatientTestsForAddingResult_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TestId" Nullable="false" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectPatientTestsForAddingResultForUpdate_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TestId" Nullable="false" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="selectPreviousBill_Result">
+          <Property Type="Decimal" Name="TotalDiscountedCost" Nullable="true" Precision="19" Scale="0" />
+          <Property Type="Decimal" Name="RemainingPaidRupees" Nullable="true" Precision="18" Scale="0" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NaveedLabFinalDBModelStoreContainer" CdmEntityContainer="NaveedLabFinalDBEntities">
+          <EntitySetMapping Name="tblAgeFactors">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblAgeFactor">
+              <MappingFragment StoreEntitySet="tblAgeFactor">
+                <ScalarProperty Name="AgeRange" ColumnName="AgeRange" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBranches">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblBranch">
+              <MappingFragment StoreEntitySet="tblBranch">
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblChapters">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblChapter">
+              <MappingFragment StoreEntitySet="tblChapter">
+                <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+                <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDoctors">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblDoctor">
+              <MappingFragment StoreEntitySet="tblDoctor">
+                <ScalarProperty Name="SharePercentage" ColumnName="SharePercentage" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="DoctorType" ColumnName="DoctorType" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+                <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblEmployees">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblEmployee">
+              <MappingFragment StoreEntitySet="tblEmployee">
+                <ScalarProperty Name="BranchFID" ColumnName="BranchFID" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblPatientTests">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblPatientTest">
+              <MappingFragment StoreEntitySet="tblPatientTests">
+                <ScalarProperty Name="SpecialDiscount" ColumnName="SpecialDiscount" />
+                <ScalarProperty Name="Flag" ColumnName="Flag" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblResults">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblResult">
+              <MappingFragment StoreEntitySet="tblResult">
+                <ScalarProperty Name="PatientTestId" ColumnName="PatientTestId" />
+                <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+                <ScalarProperty Name="TestParameterId" ColumnName="TestParameterId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTests">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblTest">
+              <MappingFragment StoreEntitySet="tblTest">
+                <ScalarProperty Name="Charges" ColumnName="Charges" />
+                <ScalarProperty Name="ChapterFID" ColumnName="ChapterFID" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTestParameters">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblTestParameter">
+              <MappingFragment StoreEntitySet="tblTestParameters">
+                <ScalarProperty Name="AgeRangeFID" ColumnName="AgeRangeFID" />
+                <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="addParameterInSpecificAgeFactor" FunctionName="NaveedLabFinalDBModel.Store.addParameterInSpecificAgeFactor" />
+          <FunctionImportMapping FunctionImportName="changePassword" FunctionName="NaveedLabFinalDBModel.Store.changePassword" />
+          <FunctionImportMapping FunctionImportName="deleteDoctor" FunctionName="NaveedLabFinalDBModel.Store.deleteDoctor" />
+          <FunctionImportMapping FunctionImportName="deleteEmployees" FunctionName="NaveedLabFinalDBModel.Store.deleteEmployees" />
+          <FunctionImportMapping FunctionImportName="deleteParameterFromSpecificAgeFactor" FunctionName="NaveedLabFinalDBModel.Store.deleteParameterFromSpecificAgeFactor" />
+          <FunctionImportMapping FunctionImportName="getAllBranches" FunctionName="NaveedLabFinalDBModel.Store.getAllBranches">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.getAllBranches_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDoctors" FunctionName="NaveedLabFinalDBModel.Store.getDoctors">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.getDoctors_Result">
+                <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+                <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="DoctorType" ColumnName="DoctorType" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="SharePercentage" ColumnName="SharePercentage" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getEmployees" FunctionName="NaveedLabFinalDBModel.Store.getEmployees">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.getEmployees_Result">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="BranchFID" ColumnName="BranchFID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="insertTestParameterResult" FunctionName="NaveedLabFinalDBModel.Store.insertTestParameterResult" />
+          <FunctionImportMapping FunctionImportName="selectAgeFactor" FunctionName="NaveedLabFinalDBModel.Store.selectAgeFactor">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectAgeFactor_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AgeRange" ColumnName="AgeRange" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectChapter" FunctionName="NaveedLabFinalDBModel.Store.selectChapter">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectChapter_Result">
+                <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+                <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectPatient" FunctionName="NaveedLabFinalDBModel.Store.selectPatient">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatient_Result">
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EmailFID" ColumnName="EmailFID" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectPatientByID" FunctionName="NaveedLabFinalDBModel.Store.selectPatientByID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientByID_Result">
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EmailFID" ColumnName="EmailFID" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectPatientNameAndTests" FunctionName="NaveedLabFinalDBModel.Store.selectPatientNameAndTests">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientNameAndTests_Result">
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="Charges" ColumnName="Charges" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectResultedTest" FunctionName="NaveedLabFinalDBModel.Store.selectResultedTest">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectResultedTest_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectResultForPrint" FunctionName="NaveedLabFinalDBModel.Store.selectResultForPrint">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectResultForPrint_Result">
+                <ScalarProperty Name="PatientTestId" ColumnName="PatientTestId" />
+                <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+                <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectTestInChapter" FunctionName="NaveedLabFinalDBModel.Store.selectTestInChapter">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectTestInChapter_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="ChapterFID" ColumnName="ChapterFID" />
+                <ScalarProperty Name="Charges" ColumnName="Charges" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectTestParametersForResult" FunctionName="NaveedLabFinalDBModel.Store.selectTestParametersForResult">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectTestParametersForResult_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectTestParametersInAgeRange" FunctionName="NaveedLabFinalDBModel.Store.selectTestParametersInAgeRange">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectTestParametersInAgeRange_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+                <ScalarProperty Name="AgeRangeFID" ColumnName="AgeRangeFID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SelectTestPrice" FunctionName="NaveedLabFinalDBModel.Store.SelectTestPrice">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.SelectTestPrice_Result">
+                <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+                <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+                <ScalarProperty Name="ISUPDATE" ColumnName="ISUPDATE" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="Charges" ColumnName="Charges" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="setDoctor" FunctionName="NaveedLabFinalDBModel.Store.setDoctor" />
+          <FunctionImportMapping FunctionImportName="setEmployees" FunctionName="NaveedLabFinalDBModel.Store.setEmployees" />
+          <FunctionImportMapping FunctionImportName="setTestToPendingForUpdate" FunctionName="NaveedLabFinalDBModel.Store.setTestToPendingForUpdate" />
+          <FunctionImportMapping FunctionImportName="setTestToPrinted" FunctionName="NaveedLabFinalDBModel.Store.setTestToPrinted" />
+          <FunctionImportMapping FunctionImportName="signInUser" FunctionName="NaveedLabFinalDBModel.Store.signInUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.signInUser_Result">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="BranchFID" ColumnName="BranchFID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SpAddParameters" FunctionName="NaveedLabFinalDBModel.Store.SpAddParameters" />
+          <FunctionImportMapping FunctionImportName="spInsertParametersForRegisteredTests" FunctionName="NaveedLabFinalDBModel.Store.spInsertParametersForRegisteredTests" />
+          <FunctionImportMapping FunctionImportName="updateDoctor" FunctionName="NaveedLabFinalDBModel.Store.updateDoctor" />
+          <FunctionImportMapping FunctionImportName="updateEmployees" FunctionName="NaveedLabFinalDBModel.Store.updateEmployees" />
+          <FunctionImportMapping FunctionImportName="updatePatient" FunctionName="NaveedLabFinalDBModel.Store.updatePatient" />
+          <FunctionImportMapping FunctionImportName="UpdateTestCharges" FunctionName="NaveedLabFinalDBModel.Store.UpdateTestCharges" />
+          <FunctionImportMapping FunctionImportName="selectAlreadyPrintedTest" FunctionName="NaveedLabFinalDBModel.Store.selectAlreadyPrintedTest">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectAlreadyPrintedTest_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_CalculateDoctor" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculateDoctor">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculateDoctor_Result">
+                <ScalarProperty Name="totalCost" ColumnName="totalCost" />
+                <ScalarProperty Name="SharePercentage" ColumnName="SharePercentage" />
+                <ScalarProperty Name="totalPatients" ColumnName="totalPatients" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_CalculateSales" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculateSales">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculateSales_Result">
+                <ScalarProperty Name="totalPatient" ColumnName="totalPatient" />
+                <ScalarProperty Name="totalCost" ColumnName="totalCost" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="tblPatients">
+            <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblPatient">
+              <MappingFragment StoreEntitySet="tblPatient">
+                <ScalarProperty Name="monthlyNo" ColumnName="monthlyNo" />
+                <ScalarProperty Name="RemainingPaidRupees" ColumnName="RemainingPaidRupees" />
+                <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="EmailFID" ColumnName="EmailFID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="spUpdatePatientDiscountedCost" FunctionName="NaveedLabFinalDBModel.Store.spUpdatePatientDiscountedCost" />
+          <FunctionImportMapping FunctionImportName="spChkPatientTest" FunctionName="NaveedLabFinalDBModel.Store.spChkPatientTest" />
+          <FunctionImportMapping FunctionImportName="sp_ChkBil" FunctionName="NaveedLabFinalDBModel.Store.sp_ChkBil" />
+          <FunctionImportMapping FunctionImportName="spAcceptRemainingPayment" FunctionName="NaveedLabFinalDBModel.Store.spAcceptRemainingPayment" />
+          <FunctionImportMapping FunctionImportName="sp_GetDailyPatientID" FunctionName="NaveedLabFinalDBModel.Store.sp_GetDailyPatientID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_GetDailyPatientID_Result">
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="monthlyNo" ColumnName="monthlyNo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="DHQ_AddPatient" FunctionName="NaveedLabFinalDBModel.Store.DHQ_AddPatient" />
+          <FunctionImportMapping FunctionImportName="sp_CalculatePatientBill" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculatePatientBill">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculatePatientBill_Result">
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="monthlyNo" ColumnName="monthlyNo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_CalculateBill" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculateBill">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculateBill_Result">
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Charges" ColumnName="Charges" />
+                <ScalarProperty Name="SpecialDiscount" ColumnName="SpecialDiscount" />
+                <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="AmountPaid" ColumnName="AmountPaid" />
+                <ScalarProperty Name="RemaingAmount" ColumnName="RemaingAmount" />
+                <ScalarProperty Name="dailyId" ColumnName="dailyId" />
+                <ScalarProperty Name="mr_" ColumnName="mr#" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getDoctorID" FunctionName="NaveedLabFinalDBModel.Store.getDoctorID" />
+          <FunctionImportMapping FunctionImportName="sp_CalculatePatientReport" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculatePatientReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculatePatientReport_Result">
+                <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+                <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_CountDoctor" FunctionName="NaveedLabFinalDBModel.Store.sp_CountDoctor">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CountDoctor_Result">
+                <ScalarProperty Name="TestCount" ColumnName="TestCount" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_Load_Flag" FunctionName="NaveedLabFinalDBModel.Store.sp_Load_Flag">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_Load_Flag_Result">
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_SelectTestMonthlyCount" FunctionName="NaveedLabFinalDBModel.Store.sp_SelectTestMonthlyCount">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_SelectTestMonthlyCount_Result">
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TestCount" ColumnName="TestCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_SelectTestYearlyCount" FunctionName="NaveedLabFinalDBModel.Store.sp_SelectTestYearlyCount">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_SelectTestYearlyCount_Result">
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TestCount" ColumnName="TestCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectPatientTests" FunctionName="NaveedLabFinalDBModel.Store.selectPatientTests">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientTests_Result">
+                <ScalarProperty Name="SelectedTestID" ColumnName="SelectedTestID" />
+                <ScalarProperty Name="ChapterFID" ColumnName="ChapterFID" />
+                <ScalarProperty Name="Charges" ColumnName="Charges" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="SpecialDiscount" ColumnName="SpecialDiscount" />
+                <ScalarProperty Name="PercentageDiscount" ColumnName="PercentageDiscount" />
+                <ScalarProperty Name="RemainingTestPrice" ColumnName="RemainingTestPrice" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectPatientTestsForAddingResult" FunctionName="NaveedLabFinalDBModel.Store.selectPatientTestsForAddingResult">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientTestsForAddingResult_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectPatientTestsForAddingResultForUpdate" FunctionName="NaveedLabFinalDBModel.Store.selectPatientTestsForAddingResultForUpdate">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientTestsForAddingResultForUpdate_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="selectPreviousBill" FunctionName="NaveedLabFinalDBModel.Store.selectPreviousBill">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPreviousBill_Result">
+                <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+                <ScalarProperty Name="RemainingPaidRupees" ColumnName="RemainingPaidRupees" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spRegisterTest" FunctionName="NaveedLabFinalDBModel.Store.spRegisterTest" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

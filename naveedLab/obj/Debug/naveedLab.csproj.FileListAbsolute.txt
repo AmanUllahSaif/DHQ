@@ -1,0 +1,860 @@
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\naveedLab.dll.config
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\naveedLab.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\naveedLab.pdb
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\EntityFramework.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Owin.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\System.Web.Providers.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\WebGrease.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\EntityFramework.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\System.Web.Providers.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ZAMP Tech Work\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+D:\ZAMP Tech Work\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+D:\ZAMP Tech Work\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\naveedLab.dll.config
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\WebGrease.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\naveedLab.dll.config
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\naveedLab.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\naveedLab.pdb
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Owin.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\WebGrease.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+C:\Users\Musayyab\Desktop\Naveed Lab\Naveed Lab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Owin.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+C:\Users\HP\Downloads\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Owin.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+C:\Users\Muhammad Abdullah\Downloads\naveedLab(1)\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\naveedLab(1)\naveedLab\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLabDAL.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Owin.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Musayyab\Desktop\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLabDAL.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Owin.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+H:\naveedLab\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+H:\naveedLab\naveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLabDAL.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Owin.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+C:\Users\Musayyab\Desktop\OverAllFinalNaveedLab\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.dll.config
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Providers.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\WebGrease.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\System.Web.Providers.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalNaveedLab\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.dll.config
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLabDAL.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Owin.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Providers.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\WebGrease.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Providers.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+E:\Working Section\Programing Work\Naveed Lab\OnlineCopyGoogleDrive\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.dll.config
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.pdb
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLabDAL.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Owin.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Providers.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\WebGrease.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Providers.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+E:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.dll.config
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLab.pdb
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Antlr3.Runtime.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.SqlServer.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLabDAL.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Newtonsoft.Json.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Owin.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Optimization.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Providers.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\WebGrease.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\naveedLabDAL.pdb
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Optimization.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Antlr3.Runtime.pdb
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Newtonsoft.Json.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\EntityFramework.SqlServer.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\System.Web.Providers.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.dll
+D:\Abdullah_Code\OverAllFinalDHQ\naveedLab\naveedLab\obj\Debug\naveedLab.pdb
+D:\Abdullah_Code\naveedLab\bin\naveedLab.dll.config
+D:\Abdullah_Code\naveedLab\bin\naveedLab.dll
+D:\Abdullah_Code\naveedLab\bin\naveedLab.pdb
+D:\Abdullah_Code\naveedLab\bin\Antlr3.Runtime.dll
+D:\Abdullah_Code\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Abdullah_Code\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+D:\Abdullah_Code\naveedLab\bin\EntityFramework.dll
+D:\Abdullah_Code\naveedLab\bin\EntityFramework.SqlServer.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+D:\Abdullah_Code\naveedLab\bin\naveedLabDAL.dll
+D:\Abdullah_Code\naveedLab\bin\Newtonsoft.Json.dll
+D:\Abdullah_Code\naveedLab\bin\Owin.dll
+D:\Abdullah_Code\naveedLab\bin\System.Web.Optimization.dll
+D:\Abdullah_Code\naveedLab\bin\System.Web.Providers.dll
+D:\Abdullah_Code\naveedLab\bin\WebGrease.dll
+D:\Abdullah_Code\naveedLab\bin\naveedLabDAL.pdb
+D:\Abdullah_Code\naveedLab\bin\System.Web.Optimization.xml
+D:\Abdullah_Code\naveedLab\bin\Antlr3.Runtime.pdb
+D:\Abdullah_Code\naveedLab\bin\Newtonsoft.Json.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Abdullah_Code\naveedLab\bin\EntityFramework.xml
+D:\Abdullah_Code\naveedLab\bin\EntityFramework.SqlServer.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Abdullah_Code\naveedLab\bin\System.Web.Providers.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Abdullah_Code\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Abdullah_Code\naveedLab\obj\Debug\naveedLab.csprojResolveAssemblyReference.cache
+D:\Abdullah_Code\naveedLab\obj\Debug\naveedLab.dll
+D:\Abdullah_Code\naveedLab\obj\Debug\naveedLab.pdb
+F:\aman\DHQ\Code\naveedLab\bin\naveedLab.dll.config
+F:\aman\DHQ\Code\naveedLab\bin\naveedLab.dll
+F:\aman\DHQ\Code\naveedLab\bin\naveedLab.pdb
+F:\aman\DHQ\Code\naveedLab\bin\Antlr3.Runtime.dll
+F:\aman\DHQ\Code\naveedLab\bin\AspNet.ScriptManager.bootstrap.dll
+F:\aman\DHQ\Code\naveedLab\bin\AspNet.ScriptManager.jQuery.dll
+F:\aman\DHQ\Code\naveedLab\bin\CrystalDecisions.CrystalReports.Engine.dll
+F:\aman\DHQ\Code\naveedLab\bin\CrystalDecisions.ReportSource.dll
+F:\aman\DHQ\Code\naveedLab\bin\CrystalDecisions.Shared.dll
+F:\aman\DHQ\Code\naveedLab\bin\EntityFramework.dll
+F:\aman\DHQ\Code\naveedLab\bin\EntityFramework.SqlServer.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.Identity.Core.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Cookies.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Facebook.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Google.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.OAuth.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Twitter.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.ScriptManager.WebForms.dll
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Web.Infrastructure.dll
+F:\aman\DHQ\Code\naveedLab\bin\naveedLabDAL.dll
+F:\aman\DHQ\Code\naveedLab\bin\Newtonsoft.Json.dll
+F:\aman\DHQ\Code\naveedLab\bin\Owin.dll
+F:\aman\DHQ\Code\naveedLab\bin\System.Web.Optimization.dll
+F:\aman\DHQ\Code\naveedLab\bin\System.Web.Providers.dll
+F:\aman\DHQ\Code\naveedLab\bin\WebGrease.dll
+F:\aman\DHQ\Code\naveedLab\bin\naveedLabDAL.pdb
+F:\aman\DHQ\Code\naveedLab\bin\naveedLabDAL.dll.config
+F:\aman\DHQ\Code\naveedLab\bin\System.Web.Optimization.xml
+F:\aman\DHQ\Code\naveedLab\bin\Antlr3.Runtime.pdb
+F:\aman\DHQ\Code\naveedLab\bin\Newtonsoft.Json.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\aman\DHQ\Code\naveedLab\bin\EntityFramework.xml
+F:\aman\DHQ\Code\naveedLab\bin\EntityFramework.SqlServer.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.Identity.Core.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\aman\DHQ\Code\naveedLab\bin\System.Web.Providers.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Facebook.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Cookies.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Google.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.Twitter.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\aman\DHQ\Code\naveedLab\bin\Microsoft.Owin.Security.OAuth.xml
+F:\aman\DHQ\Code\naveedLab\obj\Debug\naveedLab.csprojAssemblyReference.cache
+F:\aman\DHQ\Code\naveedLab\obj\Debug\naveedLab.csproj.CoreCompileInputs.cache
+F:\aman\DHQ\Code\naveedLab\obj\Debug\naveedLab.csproj.CopyComplete
+F:\aman\DHQ\Code\naveedLab\obj\Debug\naveedLab.dll
+F:\aman\DHQ\Code\naveedLab\obj\Debug\naveedLab.pdb

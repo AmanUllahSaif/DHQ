@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NaveedLabFinalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblAgeFactor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AgeRange" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblBranch">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BranchName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tblChapter">
+    <Key>
+      <PropertyRef Name="ChapterID" />
+    </Key>
+    <Property Name="ChapterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ChapterName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblDoctor">
+    <Key>
+      <PropertyRef Name="DoctorId" />
+    </Key>
+    <Property Name="DoctorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DoctorName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="DoctorType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="SharePercentage" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployee">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="Designation" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchFID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblPatient">
+    <Key>
+      <PropertyRef Name="PatientID" />
+    </Key>
+    <Property Name="PatientID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatientName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="DoctorID" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="EmailFID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="TotalDiscountedCost" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="RemainingPaidRupees" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="monthlyNo" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblPatientTests">
+    <Key>
+      <PropertyRef Name="PatientId" />
+      <PropertyRef Name="TestId" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatientId" Type="int" Nullable="false" />
+    <Property Name="TestId" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Flag" Type="nvarchar" MaxLength="50" />
+    <Property Name="SpecialDiscount" Type="int" />
+  </EntityType>
+  <EntityType Name="tblResult">
+    <Key>
+      <PropertyRef Name="TestParameterId" />
+      <PropertyRef Name="PatientTestId" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestParameterId" Type="int" Nullable="false" />
+    <Property Name="ValueResult" Type="nvarchar" MaxLength="50" />
+    <Property Name="PatientTestId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTest">
+    <Key>
+      <PropertyRef Name="TestName" />
+      <PropertyRef Name="ChapterFID" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ChapterFID" Type="int" Nullable="false" />
+    <Property Name="Charges" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTestParameters">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="TestId" />
+      <PropertyRef Name="AgeRangeFID" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TestId" Type="int" Nullable="false" />
+    <Property Name="StandardValue" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgeRangeFID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblEmployee_tblBranch">
+    <End Role="tblBranch" Type="Self.tblBranch" Multiplicity="0..1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBranch">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="BranchFID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPatient_tblDoctor">
+    <End Role="tblDoctor" Type="Self.tblDoctor" Multiplicity="0..1" />
+    <End Role="tblPatient" Type="Self.tblPatient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDoctor">
+        <PropertyRef Name="DoctorId" />
+      </Principal>
+      <Dependent Role="tblPatient">
+        <PropertyRef Name="DoctorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPatient_tblPatient">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="0..1" />
+    <End Role="tblPatient" Type="Self.tblPatient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="Email" />
+      </Principal>
+      <Dependent Role="tblPatient">
+        <PropertyRef Name="EmailFID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPatientTests_tblPatient">
+    <End Role="tblPatient" Type="Self.tblPatient" Multiplicity="1" />
+    <End Role="tblPatientTests" Type="Self.tblPatientTests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPatient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="tblPatientTests">
+        <PropertyRef Name="PatientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPatientTests_tblPatientTests">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblPatientTests" Type="Self.tblPatientTests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="Email" />
+      </Principal>
+      <Dependent Role="tblPatientTests">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTest_tblChapter">
+    <End Role="tblChapter" Type="Self.tblChapter" Multiplicity="1" />
+    <End Role="tblTest" Type="Self.tblTest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblChapter">
+        <PropertyRef Name="ChapterID" />
+      </Principal>
+      <Dependent Role="tblTest">
+        <PropertyRef Name="ChapterFID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTestParameters_tblAgeFactor">
+    <End Role="tblAgeFactor" Type="Self.tblAgeFactor" Multiplicity="1" />
+    <End Role="tblTestParameters" Type="Self.tblTestParameters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblAgeFactor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblTestParameters">
+        <PropertyRef Name="AgeRangeFID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="addParameterInSpecificAgeFactor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Value" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="changePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="newPassword" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="deleteDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DoctorId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="deleteEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="deleteParameterFromSpecificAgeFactor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DHQ_AddPatient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="Doctorid" Type="int" Mode="In" />
+    <Parameter Name="datePatient" Type="date" Mode="In" />
+    <Parameter Name="emailFid" Type="nvarchar" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="monthlyNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="returnId" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="getAllBranches" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getDoctorID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="int" Mode="In" />
+    <Parameter Name="outPut" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="getDoctors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="insertTestParameterResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="resultID" Type="int" Mode="In" />
+    <Parameter Name="patientID" Type="int" Mode="In" />
+    <Parameter Name="parameterValue" Type="nvarchar" Mode="In" />
+    <Parameter Name="testID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectAgeFactor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="selectAlreadyPrintedTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectChapter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="selectPatient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectPatientByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectPatientNameAndTests" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectPatientTests" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectPatientTestsForAddingResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectPatientTestsForAddingResultForUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectPreviousBill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectResultedTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectResultForPrint" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectTestInChapter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="chapterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectTestParametersForResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="selectTestParametersInAgeRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AgeFactorID" Type="int" Mode="In" />
+    <Parameter Name="testID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SelectTestPrice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="setDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="drName" Type="nvarchar" Mode="In" />
+    <Parameter Name="drGender" Type="nvarchar" Mode="In" />
+    <Parameter Name="drStatus" Type="nvarchar" Mode="In" />
+    <Parameter Name="drAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="drPhone" Type="nvarchar" Mode="In" />
+    <Parameter Name="sharePercentage" Type="int" Mode="In" />
+  </Function>
+  <Function Name="setEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="Address" Type="nvarchar" Mode="In" />
+    <Parameter Name="Designation" Type="nvarchar" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="BranchFID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="setTestToPendingForUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="setTestToPrinted" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="signInUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculateBill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculateDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="docID" Type="int" Mode="In" />
+    <Parameter Name="startDate" Type="date" Mode="In" />
+    <Parameter Name="endDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculatePatientBill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculatePatientReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_CalculateSales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startDate" Type="date" Mode="In" />
+    <Parameter Name="endDate" Type="date" Mode="In" />
+    <Parameter Name="calType" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_ChkBil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientId" Type="int" Mode="In" />
+    <Parameter Name="remaingAmount" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="sp_CountDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="year" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_GetDailyPatientID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dailyDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="sp_Load_Flag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sFlag" Type="nvarchar" Mode="In" />
+    <Parameter Name="npId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_SelectTestMonthlyCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="testName" Type="nvarchar" Mode="In" />
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="sp_SelectTestYearlyCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="year" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spAcceptRemainingPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="int" Mode="In" />
+    <Parameter Name="balance" Type="int" Mode="In" />
+    <Parameter Name="output" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SpAddParameters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="P1" Type="xml" Mode="In" />
+    <Parameter Name="P2" Type="xml" Mode="In" />
+  </Function>
+  <Function Name="spChkPatientTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="numeric" Mode="In" />
+    <Parameter Name="patinentCheck" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="spInsertParametersForRegisteredTests" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientTestId" Type="int" Mode="In" />
+    <Parameter Name="testParameterId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spRegisterTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="int" Mode="In" />
+    <Parameter Name="testID" Type="int" Mode="In" />
+    <Parameter Name="employeeEmail" Type="nvarchar" Mode="In" />
+    <Parameter Name="specialDiscount" Type="int" Mode="In" />
+    <Parameter Name="ageFactor" Type="int" Mode="In" />
+    <Parameter Name="chkCount" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spUpdatePatientDiscountedCost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="patientID" Type="numeric" Mode="In" />
+    <Parameter Name="discountedCostPaid" Type="numeric" Mode="In" />
+    <Parameter Name="remainingpaidAmount" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="updateDoctor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="drId" Type="int" Mode="In" />
+    <Parameter Name="drName" Type="nvarchar" Mode="In" />
+    <Parameter Name="drType" Type="nvarchar" Mode="In" />
+    <Parameter Name="Address" Type="nvarchar" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+    <Parameter Name="SharePercentage" Type="int" Mode="In" />
+  </Function>
+  <Function Name="updateEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="empName" Type="nvarchar" Mode="In" />
+    <Parameter Name="address" Type="nvarchar" Mode="In" />
+    <Parameter Name="Designation" Type="nvarchar" Mode="In" />
+    <Parameter Name="BrID" Type="int" Mode="In" />
+    <Parameter Name="PhoneNo" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="updatePatient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="Phone" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UpdateTestCharges" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="P1" Type="xml" Mode="In" />
+  </Function>
+  <EntityContainer Name="NaveedLabFinalDBModelStoreContainer">
+    <EntitySet Name="tblAgeFactor" EntityType="Self.tblAgeFactor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBranch" EntityType="Self.tblBranch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblChapter" EntityType="Self.tblChapter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDoctor" EntityType="Self.tblDoctor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployee" EntityType="Self.tblEmployee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPatient" EntityType="Self.tblPatient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPatientTests" EntityType="Self.tblPatientTests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblResult" EntityType="Self.tblResult" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTest" EntityType="Self.tblTest" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTestParameters" EntityType="Self.tblTestParameters" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblEmployee_tblBranch" Association="Self.FK_tblEmployee_tblBranch">
+      <End Role="tblBranch" EntitySet="tblBranch" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPatient_tblDoctor" Association="Self.FK_tblPatient_tblDoctor">
+      <End Role="tblDoctor" EntitySet="tblDoctor" />
+      <End Role="tblPatient" EntitySet="tblPatient" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPatient_tblPatient" Association="Self.FK_tblPatient_tblPatient">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblPatient" EntitySet="tblPatient" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPatientTests_tblPatient" Association="Self.FK_tblPatientTests_tblPatient">
+      <End Role="tblPatient" EntitySet="tblPatient" />
+      <End Role="tblPatientTests" EntitySet="tblPatientTests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPatientTests_tblPatientTests" Association="Self.FK_tblPatientTests_tblPatientTests">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblPatientTests" EntitySet="tblPatientTests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTest_tblChapter" Association="Self.FK_tblTest_tblChapter">
+      <End Role="tblChapter" EntitySet="tblChapter" />
+      <End Role="tblTest" EntitySet="tblTest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTestParameters_tblAgeFactor" Association="Self.FK_tblTestParameters_tblAgeFactor">
+      <End Role="tblAgeFactor" EntitySet="tblAgeFactor" />
+      <End Role="tblTestParameters" EntitySet="tblTestParameters" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

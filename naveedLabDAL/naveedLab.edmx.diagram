@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f4785397ebce4c63b32e2e7e9bb5fce3" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblAgeFactor" Width="1.5" PointX="5.75" PointY="6.25" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblBranch" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblChapter" Width="1.5" PointX="0.75" PointY="9.125" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblDoctor" Width="1.5" PointX="3" PointY="5.375" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblEmployee" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblPatientTest" Width="1.5" PointX="7.5" PointY="1.375" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblResult" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblTest" Width="1.5" PointX="3" PointY="8.875" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblTestParameter" Width="1.5" PointX="8" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="NaveedLabFinalDBModel.FK_tblTestParameters_tblAgeFactor" />
+        <AssociationConnector Association="NaveedLabFinalDBModel.FK_tblEmployee_tblBranch" />
+        <AssociationConnector Association="NaveedLabFinalDBModel.FK_tblTest_tblChapter" />
+        <AssociationConnector Association="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatientTests" />
+        <EntityTypeShape EntityType="NaveedLabFinalDBModel.tblPatient" Width="1.5" PointX="5.25" PointY="1.75" />
+        <AssociationConnector Association="NaveedLabFinalDBModel.FK_tblPatient_tblDoctor" />
+        <AssociationConnector Association="NaveedLabFinalDBModel.FK_tblPatient_tblPatient" />
+        <AssociationConnector Association="NaveedLabFinalDBModel.FK_tblPatientTests_tblPatient" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

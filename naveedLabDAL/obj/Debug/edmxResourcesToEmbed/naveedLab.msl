@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NaveedLabFinalDBModelStoreContainer" CdmEntityContainer="NaveedLabFinalDBEntities">
+    <EntitySetMapping Name="tblAgeFactors">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblAgeFactor">
+        <MappingFragment StoreEntitySet="tblAgeFactor">
+          <ScalarProperty Name="AgeRange" ColumnName="AgeRange" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBranches">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblBranch">
+        <MappingFragment StoreEntitySet="tblBranch">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChapters">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblChapter">
+        <MappingFragment StoreEntitySet="tblChapter">
+          <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+          <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDoctors">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblDoctor">
+        <MappingFragment StoreEntitySet="tblDoctor">
+          <ScalarProperty Name="SharePercentage" ColumnName="SharePercentage" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DoctorType" ColumnName="DoctorType" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployees">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblEmployee">
+        <MappingFragment StoreEntitySet="tblEmployee">
+          <ScalarProperty Name="BranchFID" ColumnName="BranchFID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPatientTests">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblPatientTest">
+        <MappingFragment StoreEntitySet="tblPatientTests">
+          <ScalarProperty Name="SpecialDiscount" ColumnName="SpecialDiscount" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblResults">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblResult">
+        <MappingFragment StoreEntitySet="tblResult">
+          <ScalarProperty Name="PatientTestId" ColumnName="PatientTestId" />
+          <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+          <ScalarProperty Name="TestParameterId" ColumnName="TestParameterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTests">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblTest">
+        <MappingFragment StoreEntitySet="tblTest">
+          <ScalarProperty Name="Charges" ColumnName="Charges" />
+          <ScalarProperty Name="ChapterFID" ColumnName="ChapterFID" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTestParameters">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblTestParameter">
+        <MappingFragment StoreEntitySet="tblTestParameters">
+          <ScalarProperty Name="AgeRangeFID" ColumnName="AgeRangeFID" />
+          <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="addParameterInSpecificAgeFactor" FunctionName="NaveedLabFinalDBModel.Store.addParameterInSpecificAgeFactor" />
+    <FunctionImportMapping FunctionImportName="changePassword" FunctionName="NaveedLabFinalDBModel.Store.changePassword" />
+    <FunctionImportMapping FunctionImportName="deleteDoctor" FunctionName="NaveedLabFinalDBModel.Store.deleteDoctor" />
+    <FunctionImportMapping FunctionImportName="deleteEmployees" FunctionName="NaveedLabFinalDBModel.Store.deleteEmployees" />
+    <FunctionImportMapping FunctionImportName="deleteParameterFromSpecificAgeFactor" FunctionName="NaveedLabFinalDBModel.Store.deleteParameterFromSpecificAgeFactor" />
+    <FunctionImportMapping FunctionImportName="getAllBranches" FunctionName="NaveedLabFinalDBModel.Store.getAllBranches">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.getAllBranches_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDoctors" FunctionName="NaveedLabFinalDBModel.Store.getDoctors">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.getDoctors_Result">
+          <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+          <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DoctorType" ColumnName="DoctorType" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="SharePercentage" ColumnName="SharePercentage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getEmployees" FunctionName="NaveedLabFinalDBModel.Store.getEmployees">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.getEmployees_Result">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="BranchFID" ColumnName="BranchFID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="insertTestParameterResult" FunctionName="NaveedLabFinalDBModel.Store.insertTestParameterResult" />
+    <FunctionImportMapping FunctionImportName="selectAgeFactor" FunctionName="NaveedLabFinalDBModel.Store.selectAgeFactor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectAgeFactor_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AgeRange" ColumnName="AgeRange" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectChapter" FunctionName="NaveedLabFinalDBModel.Store.selectChapter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectChapter_Result">
+          <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+          <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectPatient" FunctionName="NaveedLabFinalDBModel.Store.selectPatient">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatient_Result">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="EmailFID" ColumnName="EmailFID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectPatientByID" FunctionName="NaveedLabFinalDBModel.Store.selectPatientByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientByID_Result">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="EmailFID" ColumnName="EmailFID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectPatientNameAndTests" FunctionName="NaveedLabFinalDBModel.Store.selectPatientNameAndTests">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientNameAndTests_Result">
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="Charges" ColumnName="Charges" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectResultedTest" FunctionName="NaveedLabFinalDBModel.Store.selectResultedTest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectResultedTest_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectResultForPrint" FunctionName="NaveedLabFinalDBModel.Store.selectResultForPrint">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectResultForPrint_Result">
+          <ScalarProperty Name="PatientTestId" ColumnName="PatientTestId" />
+          <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+          <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectTestInChapter" FunctionName="NaveedLabFinalDBModel.Store.selectTestInChapter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectTestInChapter_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="ChapterFID" ColumnName="ChapterFID" />
+          <ScalarProperty Name="Charges" ColumnName="Charges" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectTestParametersForResult" FunctionName="NaveedLabFinalDBModel.Store.selectTestParametersForResult">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectTestParametersForResult_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectTestParametersInAgeRange" FunctionName="NaveedLabFinalDBModel.Store.selectTestParametersInAgeRange">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectTestParametersInAgeRange_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+          <ScalarProperty Name="AgeRangeFID" ColumnName="AgeRangeFID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SelectTestPrice" FunctionName="NaveedLabFinalDBModel.Store.SelectTestPrice">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.SelectTestPrice_Result">
+          <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+          <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+          <ScalarProperty Name="ISUPDATE" ColumnName="ISUPDATE" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Charges" ColumnName="Charges" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="setDoctor" FunctionName="NaveedLabFinalDBModel.Store.setDoctor" />
+    <FunctionImportMapping FunctionImportName="setEmployees" FunctionName="NaveedLabFinalDBModel.Store.setEmployees" />
+    <FunctionImportMapping FunctionImportName="setTestToPendingForUpdate" FunctionName="NaveedLabFinalDBModel.Store.setTestToPendingForUpdate" />
+    <FunctionImportMapping FunctionImportName="setTestToPrinted" FunctionName="NaveedLabFinalDBModel.Store.setTestToPrinted" />
+    <FunctionImportMapping FunctionImportName="signInUser" FunctionName="NaveedLabFinalDBModel.Store.signInUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.signInUser_Result">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="BranchFID" ColumnName="BranchFID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpAddParameters" FunctionName="NaveedLabFinalDBModel.Store.SpAddParameters" />
+    <FunctionImportMapping FunctionImportName="spInsertParametersForRegisteredTests" FunctionName="NaveedLabFinalDBModel.Store.spInsertParametersForRegisteredTests" />
+    <FunctionImportMapping FunctionImportName="updateDoctor" FunctionName="NaveedLabFinalDBModel.Store.updateDoctor" />
+    <FunctionImportMapping FunctionImportName="updateEmployees" FunctionName="NaveedLabFinalDBModel.Store.updateEmployees" />
+    <FunctionImportMapping FunctionImportName="updatePatient" FunctionName="NaveedLabFinalDBModel.Store.updatePatient" />
+    <FunctionImportMapping FunctionImportName="UpdateTestCharges" FunctionName="NaveedLabFinalDBModel.Store.UpdateTestCharges" />
+    <FunctionImportMapping FunctionImportName="selectAlreadyPrintedTest" FunctionName="NaveedLabFinalDBModel.Store.selectAlreadyPrintedTest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectAlreadyPrintedTest_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CalculateDoctor" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculateDoctor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculateDoctor_Result">
+          <ScalarProperty Name="totalCost" ColumnName="totalCost" />
+          <ScalarProperty Name="SharePercentage" ColumnName="SharePercentage" />
+          <ScalarProperty Name="totalPatients" ColumnName="totalPatients" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CalculateSales" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculateSales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculateSales_Result">
+          <ScalarProperty Name="totalPatient" ColumnName="totalPatient" />
+          <ScalarProperty Name="totalCost" ColumnName="totalCost" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tblPatients">
+      <EntityTypeMapping TypeName="NaveedLabFinalDBModel.tblPatient">
+        <MappingFragment StoreEntitySet="tblPatient">
+          <ScalarProperty Name="monthlyNo" ColumnName="monthlyNo" />
+          <ScalarProperty Name="RemainingPaidRupees" ColumnName="RemainingPaidRupees" />
+          <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="EmailFID" ColumnName="EmailFID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spUpdatePatientDiscountedCost" FunctionName="NaveedLabFinalDBModel.Store.spUpdatePatientDiscountedCost" />
+    <FunctionImportMapping FunctionImportName="spChkPatientTest" FunctionName="NaveedLabFinalDBModel.Store.spChkPatientTest" />
+    <FunctionImportMapping FunctionImportName="sp_ChkBil" FunctionName="NaveedLabFinalDBModel.Store.sp_ChkBil" />
+    <FunctionImportMapping FunctionImportName="spAcceptRemainingPayment" FunctionName="NaveedLabFinalDBModel.Store.spAcceptRemainingPayment" />
+    <FunctionImportMapping FunctionImportName="sp_GetDailyPatientID" FunctionName="NaveedLabFinalDBModel.Store.sp_GetDailyPatientID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_GetDailyPatientID_Result">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="monthlyNo" ColumnName="monthlyNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DHQ_AddPatient" FunctionName="NaveedLabFinalDBModel.Store.DHQ_AddPatient" />
+    <FunctionImportMapping FunctionImportName="sp_CalculatePatientBill" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculatePatientBill">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculatePatientBill_Result">
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="monthlyNo" ColumnName="monthlyNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CalculateBill" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculateBill">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculateBill_Result">
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Charges" ColumnName="Charges" />
+          <ScalarProperty Name="SpecialDiscount" ColumnName="SpecialDiscount" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="AmountPaid" ColumnName="AmountPaid" />
+          <ScalarProperty Name="RemaingAmount" ColumnName="RemaingAmount" />
+          <ScalarProperty Name="dailyId" ColumnName="dailyId" />
+          <ScalarProperty Name="mr_" ColumnName="mr#" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getDoctorID" FunctionName="NaveedLabFinalDBModel.Store.getDoctorID" />
+    <FunctionImportMapping FunctionImportName="sp_CalculatePatientReport" FunctionName="NaveedLabFinalDBModel.Store.sp_CalculatePatientReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CalculatePatientReport_Result">
+          <ScalarProperty Name="StandardValue" ColumnName="StandardValue" />
+          <ScalarProperty Name="ValueResult" ColumnName="ValueResult" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CountDoctor" FunctionName="NaveedLabFinalDBModel.Store.sp_CountDoctor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_CountDoctor_Result">
+          <ScalarProperty Name="TestCount" ColumnName="TestCount" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Load_Flag" FunctionName="NaveedLabFinalDBModel.Store.sp_Load_Flag">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_Load_Flag_Result">
+          <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SelectTestMonthlyCount" FunctionName="NaveedLabFinalDBModel.Store.sp_SelectTestMonthlyCount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_SelectTestMonthlyCount_Result">
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TestCount" ColumnName="TestCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SelectTestYearlyCount" FunctionName="NaveedLabFinalDBModel.Store.sp_SelectTestYearlyCount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.sp_SelectTestYearlyCount_Result">
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TestCount" ColumnName="TestCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectPatientTests" FunctionName="NaveedLabFinalDBModel.Store.selectPatientTests">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientTests_Result">
+          <ScalarProperty Name="SelectedTestID" ColumnName="SelectedTestID" />
+          <ScalarProperty Name="ChapterFID" ColumnName="ChapterFID" />
+          <ScalarProperty Name="Charges" ColumnName="Charges" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="SpecialDiscount" ColumnName="SpecialDiscount" />
+          <ScalarProperty Name="PercentageDiscount" ColumnName="PercentageDiscount" />
+          <ScalarProperty Name="RemainingTestPrice" ColumnName="RemainingTestPrice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectPatientTestsForAddingResult" FunctionName="NaveedLabFinalDBModel.Store.selectPatientTestsForAddingResult">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientTestsForAddingResult_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectPatientTestsForAddingResultForUpdate" FunctionName="NaveedLabFinalDBModel.Store.selectPatientTestsForAddingResultForUpdate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPatientTestsForAddingResultForUpdate_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectPreviousBill" FunctionName="NaveedLabFinalDBModel.Store.selectPreviousBill">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NaveedLabFinalDBModel.selectPreviousBill_Result">
+          <ScalarProperty Name="TotalDiscountedCost" ColumnName="TotalDiscountedCost" />
+          <ScalarProperty Name="RemainingPaidRupees" ColumnName="RemainingPaidRupees" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spRegisterTest" FunctionName="NaveedLabFinalDBModel.Store.spRegisterTest" />
+  </EntityContainerMapping>
+</Mapping>
